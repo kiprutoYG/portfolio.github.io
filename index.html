@@ -8,6 +8,20 @@
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
+		<!-- Sidebar -->
+		<section id="sidebar">
+			<div class="inner">
+				<nav>
+					<ul>
+						<li><a href="#intro">Welcome</a></li>
+						<li><a href="#one">About me</a></li>
+						<li><a href="#two">Projects</a></li>
+						<li><a href="#three">Gallery</a></li>
+						<li><a href="#four">Get in touch</a></li>
+					</ul>
+				</nav>
+			</div>
+		</section>
 
 		<!-- Page Wrapper -->
 			<div id="page-wrapper">
@@ -59,16 +73,156 @@
 							</section>
 
 						<!-- Panel (Spotlight) -->
-							<section class="panel spotlight large left">
+							<section class="panel spotlight normal left">
 								<div class="content span-5">
-									<h2 class="major">Magna amet tempus</h2>
-									<p>Mauris a cursus velit. Nunc lacinia sollicitudin egestas bibendum, magna dui bibendum ex, sagittis commodo enim risus sed magna nulla. Vestibulum ut consequat velit. Curabitur vitae libero lorem. Quisque iaculis porttitor blandit. Nullam quis sagittis maximus. Sed vel nibh libero. Mauris et lorem pharetra massa lorem turpis congue pulvinar.</p>
+									<h2 class="major">Flood mapping in Porto Alegre, Brazil</h2>
+									<p>In the aftermath of the 2024 el nino floods, the true scale of Porto Alegre's 2024 El Niño floods came into sharp focus. Our mapping
+										exercise revealed that a total area of 69.791 square kilometers was submerged during this catastrophic event. To put it in
+										perspective, this inundated area is equivalent to over 9,800 football fields or roughly 13% of Porto Alegre's total land area. This is not just an exercise to identify the true scale of the event, but also a plan to remain above water in the future.
+			
+									</p>
+									<button><a href="#tobe">Full project here</a></button>
 								</div>
 								<div class="image filtered tinted" data-position="top right">
-									<img src="images/pic03.jpg" alt="" />
+									<img src="images/real-estate.jpg" alt=""  style="opacity: 0.5;"/>
 								</div>
 							</section>
+						<!-- Panel (Spotlight) -->
 
+						 <!-- Panel -->
+						 <section class="panel">
+							<div class="intro color2">
+								<p>Tools: <br>
+									<ul>
+										<li>Sentinel 2 imagery</li>
+										<li>Geemap</li>
+										<li>Jupyter Notebook</li>
+									</ul>
+								</p>
+								<p> Methodology: <br>
+									<ol>
+										<li>Acquisition of satellite images before and after floods</li>
+										<li>Preprocessing of selected images</li>
+										<li>Calculation of the Modified Normalized Difference Water Index</li>
+										<li>Masking out of permanent water using JSW dataset</li>
+										<li>Flooded areas delineation and visualization</li>
+									</ol>
+								</p>
+							</div>
+
+						<!-- Panel (Spotlight) 2 -->
+							<section class="panel spotlight normal left">
+								<div class="content span-5">
+									<h2 class="major">Mt. Nyiragongo then and now</h2>
+									<p>On 22nd May 2021, Mount Nyiragongo roared to life, painting the sky red and scarring the landscape. For many, this was like nature's violent reset button that changed
+										Nyiragongo forever. How was the previously familiar
+										landscape going to change in its quest to stay the same? <br>
+										<span>Conclusion: <br></span>
+										Nyiragongo's 2021 eruption was not an ending, but a dramatic new beginning. As lush greenery reclaims the
+											once-scorched earth, confirmed by both NBR and NDVI increases, we're reminded of nature's incredible ability to
+										adapt and thrive. The volcano's fury has given way to an explosion of life, turning a tale of destruction into one of hope and renewal.
+
+									</p>
+									<button><a href="#tobe">Full project here</a></button>
+								</div>
+								<div class="image filtered tinted" data-position="top right">
+									<img src="images/eruption.jpg" alt=""  style="opacity: 0.9;"/>
+								</div>
+							</section>
+						<!-- Panel (Spotlight) -->
+
+						 <!-- Panel -->
+						 <section class="panel">
+							<div class="intro color2">
+								<p> <ul>
+										<span style="text-align: left;">Tools:</span>
+										<li>Sentinel 2 imagery</li>
+										<li>Geemap</li>
+										<li>Jupyter Notebook</li>
+									</ul>
+									 Methodology: <br>
+									<ol>
+										<li>3year composites before and after the eruption</li>
+										<li>Preprocessing and cloud masking</li>
+										<li>Normalized Burnt Ratio calculation</li>
+										<li>Using the Delta Normalized Burnt Ratio to extract
+											burnt areas</li>
+										<li>Normalized Difference Vegetation Index
+											calculation</li>
+										<li>Correlation between the thriving vegetation and
+											burnt areas</li>	
+									</ol>
+								</p>
+							</div>
+
+						<!-- Panel (Spotlight) 3 -->
+							<section class="panel spotlight normal left">
+								<div class="content span-5">
+									<h2 class="major">Assessing rice irrigation requirements: Ahero Irrigation Scheme Study</h2>
+									<p>Water is a limited resource with many competing uses, and so the right amount should be applied at the right place. To increase rice productivity also implies abandoning the traditional irrigation methods where irrigation water was measured 'by eye'. This study assessed the precise requirements of rice in the growing season of 2023. Using remote sensing data and cutting edge trends, the study identified the amount of water needed by the rice in each growth stage and the amount of deviation between the amount of water applied and the optimal amount needed.
+
+									</p>
+									<button><a href="#tobe">Full project here</a></button>
+								</div>
+								<div class="image filtered tinted" data-position="top right">
+									<img src="images/ahero.png" alt=""  style="opacity: 0.9;"/>
+								</div>
+							</section>
+						<!-- Panel (Spotlight) -->
+
+						 <!-- Panel -->
+						 <section class="panel">
+							<div class="intro color2">
+								<p> <ul>
+										<span style="text-align: left;">Tools:</span>
+										<li>Sentinel 2 imagery</li>
+										<li>RStudio</li>
+									
+									</ul>
+									 Methodology: <br>
+									<ol>
+										<li>Calculating NDVI and NDMI using Sentinel2 images</li>
+										<li>Plotting a Bland Altman graph to investigate the correlation between NDVI (signifying health of rice), and NDMI(signifying amount of water)</li>
+										<li>Calculating extratterestial radiation</li>
+										<li>Calculating FAO reference evapotranspiration</li>
+										<li>Calculating crop coefficients for each rice growing stage from NDVI</li>
+										<li>Calculating the effective rainfall</li>	
+										<li>Calculating the irrigation needs using Hagreaves-Samani methodology</li>
+										<li>Calculating water deficits</li>
+									</ol>
+								</p>
+							</div>
+							<div class="gallery">
+								<div class="group span-3">
+									<a href="images/gallery/fulls/01.jpg" class="image filtered span-3" data-position="bottom"><img src="images/gallery/thumbs/01.jpg" alt="" /></a>
+									<a href="images/gallery/fulls/02.jpg" class="image filtered span-1-5" data-position="center"><img src="images/gallery/thumbs/02.jpg" alt="" /></a>
+									<a href="images/gallery/fulls/03.jpg" class="image filtered span-1-5" data-position="bottom"><img src="images/gallery/thumbs/03.jpg" alt="" /></a>
+								</div>
+								<a href="images/gallery/fulls/04.jpg" class="image filtered span-2-5" data-position="top"><img src="images/gallery/thumbs/04.jpg" alt="" /></a>
+								<div class="group span-4-5">
+									<a href="images/gallery/fulls/05.jpg" class="image filtered span-3" data-position="top"><img src="images/gallery/thumbs/05.jpg" alt="" /></a>
+									<a href="images/gallery/fulls/06.jpg" class="image filtered span-1-5" data-position="center"><img src="images/gallery/thumbs/06.jpg" alt="" /></a>
+									<a href="images/gallery/fulls/07.jpg" class="image filtered span-1-5" data-position="bottom"><img src="images/gallery/thumbs/07.jpg" alt="" /></a>
+									<a href="images/gallery/fulls/08.jpg" class="image filtered span-3" data-position="top"><img src="images/gallery/thumbs/08.jpg" alt="" /></a>
+								</div>
+								<a href="images/gallery/fulls/09.jpg" class="image filtered span-2-5" data-position="right"><img src="images/gallery/thumbs/09.jpg" alt="" /></a>
+							</div>
+						</section>
+
+							<section class="panel spotlight medium left">
+								<div class="content span-5">
+									<h2 class="major">Flood mapping in Porto Alegre, Brazil</h2>
+									<p>In the aftermath of the 2024 el nino floods, the true scale of Porto Alegre's 2024 El Niño floods came into sharp focus. Our mapping
+										exercise revealed that a total area of 69.791 square kilometers was submerged during this catastrophic event. To put it in
+										perspective, this inundated area is equivalent to over 9,800 football fields or roughly 13% of Porto Alegre's total land area. This is not just an exercise to identify the true scale of the event, but also a plan to remain above water in the future.
+			
+									</p>
+									<button><a href="#tobe">Full project here</a></button>
+								</div>
+								<div class="image filtered tinted" data-position="top right">
+									<img src="images/real-estate.jpg" alt=""  style="opacity: 0.5;"/>
+								</div>
+							</section>
 						<!-- Panel -->
 							<section class="panel">
 								<div class="intro color2">
